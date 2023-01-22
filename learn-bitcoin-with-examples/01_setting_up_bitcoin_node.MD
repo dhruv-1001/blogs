@@ -1,0 +1,1 @@
+# Setting up Bitcoin node
