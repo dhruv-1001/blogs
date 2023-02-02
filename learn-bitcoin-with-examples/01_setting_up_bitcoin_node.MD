@@ -72,6 +72,26 @@ which bitcoin-cli
 Now we can use these executables from any directory.
 
 ## Setting up testnet blockchain
+For the blog purpose, i'm using testnet (which is what developers use to test some features, and it's small in size compared to mainnet which is arount 450 GB (2nd Feb 2023), while the testnet is around 28 GB)
 
-### Updating bitcoin.conf file
+### Setting up bitcoin.conf file
+
+Let's start `bitcoind`, and download testnet blockchain. Run this command
+```bash
+bitcoind -chain=test
+```
+For now, let's stop using `command/ctrl + c`. You will see bunch of output, and let's focus on these lines
+```bash
+...
+...
+2023-02-02T17:27:24Z Default data directory /Users/dhruvbaliyan/Library/Application Support/Bitcoin
+2023-02-02T17:27:24Z Using data directory /Users/dhruvbaliyan/Library/Application Support/Bitcoin/testnet3
+2023-02-02T17:27:24Z Config file: /Users/dhruvbaliyan/Library/Application Support/Bitcoin/bitcoin.conf (not found, skipping)
+...
+...
+```
+
+These tell us what are some default directory for storing blockchain on where `bitcoind` is looking for the `bitcoin.conf` file. If you want to store the blockchain to some other location you would require to add `-datadir=<dir>` argument to `bitcoind` binary, or if you want to change the port, you would have to pass in the argument `-port=<port>`. <br>
+You would be required to add these arguments every time you start `bitcoind`, so let's add `bitcoin.conf` file to at it's default location, which is available in the output above. <br>
+For macOS it is `$HOME/Library/Application Support/Bitcoin/bitcoin.conf` and for linux it is `$HOME/.bitcoin/bitcoin.conf`.
 
