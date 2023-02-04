@@ -20,7 +20,7 @@ There is too much to learn about Bitcoin, that cannot be covered by blogs. So we
 We will be working from the ground up, and going the basic concepts using some data examples, and solving some exercises. I'll be adding links to the blogs as I complete them.
 
 ### Chapters
-Chapter 1 - [Setting up Bitcoin node]()
+Chapter 1 - [Setting up Bitcoin node](https://github.com/dhruv-1001/blogs/blob/master/learn-bitcoin-with-examples/01_setting_up_bitcoin_node.MD)
 
 Chapter 2 - [Keys, Cryptography, Addresses]()
 
