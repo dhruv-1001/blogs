@@ -26,7 +26,7 @@ Chapter 2 - [Keys, Cryptography, Addresses]()
 
 Chapter 3 - **Todo**
 
-### Extra
+## Extra
 If you want to read about Satoshi Nakamoto's original paper, here it is [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
 
 If you find any incorrections or have any problem understanding any concept, you can create issue at this github repository and we can discuss it there. Link to repository - https://github.com/dhruv-1001/blogs
